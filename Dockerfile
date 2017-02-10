@@ -5,7 +5,8 @@ FROM ubuntu:14.04
 MAINTAINER ma.tangaro@gmail.com
 
 # Install OpenJDK 7 JRE 
-RUN apt-get update && apt-get install --yes \
+#RUN apt-get update && apt-get install --yes \
+RUN apt-get install --yes \
     openjdk-7-jre \
     wget \
     unzip
@@ -16,7 +17,7 @@ ENV FASTQC_VERSION=0.11.5
 
 ENV FASTQC_PATH=http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 
-ENV FASTQC_PACKAGE=fastqc_v${FASTQC_VERSION}
+ENV FASTQC_PACKAGE=fastqc_v${FASTQC_VERSION}.zip
 
 RUN wget ${FASTQC_PATH}/${FASTQC_PACKAGE}
 
