@@ -18,7 +18,7 @@ ENV FASTQC_PATH=http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 
 ENV FASTQC_PACKAGE=fastqc_v${FASTQC_VERSION}
 
-RUN wget ${FASTQC_PATH}/FASTQC_PACKAGE
+RUN wget ${FASTQC_PATH}/${FASTQC_PACKAGE}
 
 RUN unzip ${FASTQC_PACKAGE}
 
