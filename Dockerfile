@@ -7,6 +7,7 @@ MAINTAINER ma.tangaro@gmail.com
 # Install OpenJDK 7 JRE 
 RUN apt-get update && apt-get install --yes \
     openjdk-7-jdk \
+    mercurial \
     wget \
     unzip
 
