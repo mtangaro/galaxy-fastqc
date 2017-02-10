@@ -31,4 +31,4 @@ RUN hg clone https://toolshed.g2.bx.psu.edu/repos/devteam/fastqc galaxy-fastqc
 
 RUN cp galaxy-fastqc/rgFastQC.py /usr/bin/rgFastQC.py
 
-RUN chmod a+x /usr/binrgFastQC.py
+RUN chmod a+x /usr/bin/rgFastQC.py
