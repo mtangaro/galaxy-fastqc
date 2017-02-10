@@ -25,7 +25,7 @@ RUN unzip ${FASTQC_PACKAGE}
 
 RUN chmod +x FastQC/fastqc
 
-RUN cp FastQC/fastqc /usr/bin/fastqc
+RUN ln -s /opt/FastQC/fastqc /usr/bin/fastqc
 
 RUN hg clone https://toolshed.g2.bx.psu.edu/repos/devteam/fastqc galaxy-fastqc
 
